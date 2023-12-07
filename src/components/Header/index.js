@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
     return (
         <div>
+            <img src="../Images/ThornbushLogo.png" />
             <h1>
                 Thornbush Photography
             </h1>

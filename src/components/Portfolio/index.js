@@ -1,11 +1,14 @@
 import React from 'react';
+import images from "../Images/index.js";
 
 export default function Portfolio() {
     return (
-        <div>
-            <p>image 1</p>
-            <p>image 2</p>
-            <p>image 3</p>
-        </div>
+        images.map((image) => {
+            return (
+                <div>
+                <img src={image.url} />
+                </div>
+            )
+        })
     )
 };
