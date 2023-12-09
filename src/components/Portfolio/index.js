@@ -1,16 +1,19 @@
 import React from 'react';
 import images from "../Images";
-
-
+import GatorEye from "../Images/GatorEye.jpg";
 
 export default function Portfolio() {
+    const portfolioImages = images;
+    
     return (
-        images.map((image) => {
+        
+        <div>
+        
+        {portfolioImages.map((image) => {
             return (
-                <div>
-                    <img src={image.url} />
-                </div>
+                <img src={image.src} />
             )
-        })
+        })}
+        </div>
     )
 };

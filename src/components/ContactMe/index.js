@@ -14,12 +14,21 @@ export default function ContactMe() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log("ass");
+        
+        if (name === "" || email === "" || message === "") {
+            return (
+                alert("Please fill out all fields in the Contact section.")
+                )
+        }
+        if (name !== "" && email !== "" && message !== "") {
         emailjs.send('service_kbie0nm', 'template_6v6pq99', contactMessage, 'A50rxTr5mug440osn').then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
          }, function(error) {
             console.log('FAILED...', error);
          })
+         alert("Thanks for the message. We'll get back to you as soon as we can!");
+         window.location.reload();
+        }
     };
 
     return (

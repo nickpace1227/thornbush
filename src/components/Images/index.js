@@ -1,15 +1,15 @@
 const images = [
     {
         id: "img0001",
-        url: "./ScrubJay.jpg",
+        src: "./ScrubJay.jpg",
     },
     {
         id: "img0002",
-        url: "./FlockOfBirds.jpg",
+        src: "./FlockOfBirds.jpg",
     },
     {
         id: "img0003",
-        url: "../Images/GatorEye.jpg",
+        src: "../Images/GatorEye.jpg",
     }
 ];
 
