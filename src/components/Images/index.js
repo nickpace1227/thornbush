@@ -1,16 +1,17 @@
-const images = [
+export const images = [
     {
-        id: "img0001",
+        id: 1,
+        name: "img0001",
         src: "./ScrubJay.jpg",
     },
     {
-        id: "img0002",
+        id: 2, 
+        name: "img0002",
         src: "./FlockOfBirds.jpg",
     },
     {
-        id: "img0003",
+        id: 3,
+        name: "img0003",
         src: "../Images/GatorEye.jpg",
     }
 ];
-
-export default images;

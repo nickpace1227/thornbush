@@ -1,19 +1,25 @@
 import React from 'react';
-import images from "../Images";
-import GatorEye from "../Images/GatorEye.jpg";
+import { Wrapper } from './styles.js';
+import {images} from "../Images";
+import ScrubJay from "../Images/ScrubJay.jpg";
+
+
 
 export default function Portfolio() {
-    const portfolioImages = images;
-    
+
     return (
-        
+        <Wrapper>
         <div>
-        
-        {portfolioImages.map((image) => {
+            <img class="portfolio-photo" src={ScrubJay} />
+        {images.map((image) => {
             return (
+                <div>
+                <p>{image.id}</p>
                 <img src={image.src} />
+                </div>
             )
         })}
         </div>
+        </Wrapper>
     )
 };

@@ -10,8 +10,8 @@ export const Wrapper = styled.div`
 .header-logo {
     display: flex;
     justify-content: left;
-    width: 500px;
-    height: 500px;
+    width: 100px;
+    height: 100px;
 }
 
 .company-name {
