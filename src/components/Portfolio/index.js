@@ -11,11 +11,12 @@ export default function Portfolio() {
         <Wrapper>
         <div>
             <img class="portfolio-photo" src={ScrubJay} />
+
         {images.map((image) => {
             return (
                 <div>
                 <p>{image.id}</p>
-                <img src={image.src} />
+                <img src={image} />
                 </div>
             )
         })}

@@ -12,6 +12,6 @@ export const images = [
     {
         id: 3,
         name: "img0003",
-        src: "../Images/GatorEye.jpg",
+        src: "./GatorEye.jpg",
     }
 ];
