@@ -4,23 +4,27 @@ export const Wrapper = styled.div`
 * {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: row;
 }
 
 .header-logo {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
+    align-items: row;
     width: 100px;
     height: 100px;
+    margin: 20px;
 }
 
 .company-name {
-    
+    display: flex;
+    align-items: center;
 }
 
 .nav-items {
-    display: inline;
+    display: flex;
     padding: 10px;
+    align-items: center;
 }
 
 .nav-links {

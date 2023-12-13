@@ -8,25 +8,25 @@ export default function Header() {
     return (
         <Wrapper>
         <div>
-            <Link to="/homepage" class="header-logo">
+            <Link to="/homepage" className="header-logo">
                 <img src={ThornbushLogo}/>
             </Link>
-            <h1 class="company-name">
+            <h1 className="company-name">
                 Thornbush Photography
             </h1>
-            <nav class="nav-bar">
+            <nav className="nav-bar">
                 <ul>
-                    <li class="nav-items">
-                        <Link class="nav-links" to="/homepage">HomePage</Link>
+                    <li className="nav-items">
+                        <Link className="nav-links" to="/homepage">HomePage</Link>
                     </li>
-                    <li class="nav-items">
-                        <Link class="nav-links" to="/Portfolio">Portfolio</Link>
+                    <li className="nav-items">
+                        <Link className="nav-links" to="/Portfolio">Portfolio</Link>
                     </li>
-                    <li class="nav-items">
-                        <Link class="nav-links" to="/About">About</Link>
+                    <li className="nav-items">
+                        <Link className="nav-links" to="/About">About</Link>
                     </li>
-                    <li class="nav-items">
-                        <Link class="nav-links" to="/ContactMe">Contact Me</Link>
+                    <li className="nav-items">
+                        <Link className="nav-links" to="/ContactMe">Contact Me</Link>
                     </li>
                 </ul>
             </nav>
