@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Wrapper } from "./styles.js";
-import ThornbushLogoWhite from "../Images/ThornbushLogoWhite.png";
-import ThornbushLogo from "../Images/ThornbushLogo.png";
-import GatorEye from "../Images/GatorEye.jpg";
+import ThornbushLogoWhite from "../../assets/images/ThornbushLogoWhite.png";
+import ThornbushLogo from "../../assets/images/ThornbushLogo.png";
 
 export default function Header() {
     return (

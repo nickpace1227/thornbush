@@ -1,26 +1,37 @@
 import React from 'react';
 import { Wrapper } from './styles.js';
-import {images} from "../Images";
-import ScrubJay from "../Images/ScrubJay.jpg";
 
+
+const photos = [
+    {
+        label: "img0001",
+        src: "ScrubJay",
+        type: ".jpg",
+    },
+    {
+        label: "img0002",
+        src: "FlockofBirds",
+        type: ".jpg",
+    },
+    {
+        label: "img0003",
+        src: "GatorEye" ,
+        type: ".jpg",
+    }
+];
 
 
 export default function Portfolio() {
-
     return (
         <Wrapper>
-        <div>
-            <img class="portfolio-photo" src={ScrubJay} />
-
-        {images.map((image) => {
+        {photos.map((photo) => {
             return (
-                <div>
-                <p>{image.id}</p>
-                <img src={image} />
+                <div key={photo.label}>
+                <p>{photo.label}</p>
+                <img className="portfolio-photo" alt={photo.src} src={require(`../../assets/images/${photo.src}${photo.type}`)} />
                 </div>
             )
         })}
-        </div>
         </Wrapper>
     )
 };
