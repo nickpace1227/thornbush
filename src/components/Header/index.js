@@ -1,35 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Wrapper } from "./styles.js";
-import ThornbushLogoWhite from "../../assets/images/ThornbushLogoWhite.png";
 import ThornbushLogo from "../../assets/images/ThornbushLogo.png";
 
 export default function Header() {
     return (
         <Wrapper>
-        <div>
-            <Link to="/homepage" className="header-logo">
-                <img src={ThornbushLogo}/>
+        <div className="header-content">
+            <Link to="/homepage" >
+                <img className="header-logo" alt="logo" src={ThornbushLogo}/>
             </Link>
+            <div className="header-words">
             <h1 className="company-name">
                 Thornbush Photography
             </h1>
             <nav className="nav-bar">
-                <ul>
-                    <li className="nav-items">
-                        <Link className="nav-links" to="/homepage">HomePage</Link>
+                <ul className="list">
+                    <li className="list-item">
+                        <Link to="/homepage" className="link-item">HomePage</Link>
                     </li>
-                    <li className="nav-items">
-                        <Link className="nav-links" to="/Portfolio">Portfolio</Link>
+                    <li className="list-item">
+                        <Link to="/Portfolio" className="link-item">Portfolio</Link>
                     </li>
-                    <li className="nav-items">
-                        <Link className="nav-links" to="/About">About</Link>
+                    <li className="list-item">
+                        <Link className="link-item" to="/About">About</Link>
                     </li>
-                    <li className="nav-items">
-                        <Link className="nav-links" to="/ContactMe">Contact Me</Link>
+                    <li className="list-item">
+                        <Link to="/ContactMe" className="link-item">Contact Me</Link>
                     </li>
                 </ul>
             </nav>
+            </div>
         </div>
         </Wrapper>
     )

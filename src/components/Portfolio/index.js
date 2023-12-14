@@ -17,13 +17,19 @@ const photos = [
         label: "img0003",
         src: "GatorEye" ,
         type: ".jpg",
-    }
+    },
+    {
+        label: "img0004",
+        src: "Crab",
+        type: ".jpg",
+    },
 ];
 
 
 export default function Portfolio() {
     return (
         <Wrapper>
+        <div className="portfolio">
         {photos.map((photo) => {
             return (
                 <div key={photo.label}>
@@ -32,6 +38,7 @@ export default function Portfolio() {
                 </div>
             )
         })}
+        </div>
         </Wrapper>
     )
 };

@@ -1,33 +1,46 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-* {
+
+.header-content {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: row;
 }
 
 .header-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: row;
     width: 100px;
     height: 100px;
     margin: 20px;
 }
 
+.header-words {
+    display: flex;
+    flex-direction: column;
+}
+
 .company-name {
-    display: flex;
-    align-items: center;
+    margin: 0px;
 }
 
-.nav-items {
+.nav-bar {
     display: flex;
-    padding: 10px;
-    align-items: center;
+    flex-direction: row;
 }
 
-.nav-links {
+.list {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-item {
+    list-style-type: none;
+}
+
+.link-item {
+    underline: none;
+    margin: 0px 33px 0px 0px;
     text-decoration: none;
 }
 `;
