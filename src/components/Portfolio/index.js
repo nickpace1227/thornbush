@@ -23,6 +23,11 @@ const photos = [
         src: "Crab",
         type: ".jpg",
     },
+    {
+        label: "img0005",
+        src: "SoftshellTurtle",
+        type: ".jpg",
+    }
 ];
 
 

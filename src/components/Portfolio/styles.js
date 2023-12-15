@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
     column-gap: 100px;
     row-gap: 50px;
     text-align: center;
+    justify-content: center;
 }
 
 .portfolio-photo {
