@@ -4,28 +4,38 @@ import { Wrapper } from './styles.js';
 
 const photos = [
     {
-        label: "img0001",
+        label: "IMG0001",
         src: "ScrubJay",
         type: ".jpg",
     },
     {
-        label: "img0002",
+        label: "IMG0002",
         src: "FlockofBirds",
         type: ".jpg",
     },
     {
-        label: "img0003",
+        label: "IMG0003",
         src: "GatorEye" ,
         type: ".jpg",
     },
     {
-        label: "img0004",
+        label: "IMG0004",
         src: "Crab",
         type: ".jpg",
     },
     {
-        label: "img0005",
+        label: "IMG0005",
         src: "SoftshellTurtle",
+        type: ".jpg",
+    },
+    {
+        label: "IMG0006",
+        src: "BeachBird",
+        type: ".jpg",
+    },
+    {
+        label: "IMG0007",
+        src: "SleepyBird",
         type: ".jpg",
     }
 ];
@@ -34,7 +44,7 @@ const photos = [
 export default function Portfolio() {
     return (
         <Wrapper>
-        <div className="portfolio">
+        <div className="small-screen medium-screen large-screen">
         {photos.map((photo) => {
             return (
                 <div key={photo.label}>

@@ -14,7 +14,7 @@ export default function Header() {
             <h1 className="company-name">
                 Thornbush Photography
             </h1>
-            <nav className="nav-bar">
+            <nav className="nav nav-bar">
                 <ul className="list">
                     <li className="list-item">
                         <Link to="/homepage" className="link-item">HomePage</Link>

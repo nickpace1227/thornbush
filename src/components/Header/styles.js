@@ -28,6 +28,16 @@ export const Wrapper = styled.div`
     flex-direction: row;
 }
 
+.nav-bar a {
+    padding: .5em;
+    border-radius: 5px;
+}
+
+.nav-bar a:hover {
+    background-color: rgba(0, 0, 0, .3);
+    border: 5px;
+}
+
 .list {
     padding-left: 0px;
     display: flex;
