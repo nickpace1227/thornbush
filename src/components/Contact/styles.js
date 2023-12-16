@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+
 .contact-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.contact-header {
-    
 }
 
 .contact-explanation {

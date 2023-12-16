@@ -1,10 +1,15 @@
 import React from 'react';
+import {Wrapper} from './styles.js';
 
 export default function HomePage() {
     return (
-        <div>
+    <Wrapper>
+        <body className="homepage">
+        <div className="homepage-layout">
             <h1>Welcome to Thornbush Photography</h1>
-            <p>I'm just an amateur photographer with a focus on wildlife. Take a look around and if you have any questions feel free to drop me a line.</p>
+            <div className="homepage-words">I'm an amateur photographer with a focus on wildlife and sometimes landscape. Take a look around and if you have any questions feel free to drop me a line.</div>
         </div>
+        </body>
+    </Wrapper>
     )
 };

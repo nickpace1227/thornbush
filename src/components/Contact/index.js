@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Wrapper } from "./styles.js";
 
+
 export default function Contact() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -34,14 +35,14 @@ export default function Contact() {
 
     return (
         <Wrapper>
-        <div className="contact-page">
-            <h1 className="contact-header">Feel the need to reach out?</h1>
+        <body className="contact-page">
+            <h1>Feel the need to reach out?</h1>
                 <div className="contact-explanation">If you like my portfolio and want to reach out for a print or a commission, feel free to fill out the contact form below. I'll get back to you as soon as I can.</div>
                     <input className="input-field" type="text" placeholder="Name" name="from_name" onChange={(e) => setName(e.target.value)} />
                     <input className="input-field" type="email" placeholder="Contact Email" name="reply_to" onChange={(e) => setEmail(e.target.value)} />
                     <textarea className="input-field contact-message" placeholder="Your Question/Commission/Print Details/Love Letter" name="message" onChange={(e) => setMessage(e.target.value)} />
                     <button className="contact-button" type="button" onClick={sendEmail}>Submit</button>
-        </div>
+        </body>
         </Wrapper>
     )
 }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import HeaderBird from "../../assets/images/HeaderBird.jpg";
 
 export const Wrapper = styled.div`
 
@@ -6,6 +7,10 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(${HeaderBird});
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 .header-logo {
@@ -31,10 +36,11 @@ export const Wrapper = styled.div`
 .nav-bar a {
     padding: .5em;
     border-radius: 5px;
+    color: white;
 }
 
 .nav-bar a:hover {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(255, 255, 255, .3);
     border: 5px;
 }
 

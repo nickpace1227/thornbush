@@ -55,6 +55,6 @@ export const Wrapper = styled.div`
 
 .portfolio-intro {
     text-align: center;
-    margin: 0px 15%;
+    margin: 15px 15%;
 }
 `

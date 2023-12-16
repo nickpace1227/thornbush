@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Wrapper } from "./styles.js";
-import ThornbushLogo from "../../assets/images/ThornbushLogo.png";
+import ThornbushLogoWhite from "../../assets/images/ThornbushLogoWhite.png";
+
 
 export default function Header() {
     return (
         <Wrapper>
         <div className="header-content">
             <Link to="/homepage" >
-                <img className="header-logo" alt="logo" src={ThornbushLogo}/>
+                <img className="header-logo" alt="logo" src={ThornbushLogoWhite}/>
             </Link>
             <div className="header-words">
             <h1 className="company-name">
