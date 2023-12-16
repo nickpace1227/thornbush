@@ -26,7 +26,7 @@ export default function Header() {
                         <Link className="link-item" to="/About">About</Link>
                     </li>
                     <li className="list-item">
-                        <Link to="/ContactMe" className="link-item">Contact Me</Link>
+                        <Link to="/Contact" className="link-item">Contact</Link>
                     </li>
                 </ul>
             </nav>

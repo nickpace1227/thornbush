@@ -44,6 +44,7 @@ const photos = [
 export default function Portfolio() {
     return (
         <Wrapper>
+        <div className="portfolio-intro">Thanks for checking out my portfolio. If you see something you like feel free to head over to the contact page, send me a message with the image ID of the image you want, and we can get a print squared away for you. Otherwise have a look around.</div>
         <div className="small-screen medium-screen large-screen">
         {photos.map((photo) => {
             return (

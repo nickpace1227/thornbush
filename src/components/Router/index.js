@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "../HomePage";
 import Header from "../Header";
 import Portfolio from "../Portfolio";
-import ContactMe from "../ContactMe";
+import Contact from "../Contact";
 import About from "../About";
 import {GlobalStyles} from "../styles/globalStyles";
 
@@ -17,7 +17,7 @@ export default function Thornbush() {
                 <Route path="/HomePage" exact element={<HomePage />} />
                 <Route path="/Portfolio" exact element={<Portfolio />} />
                 <Route path="/About" exact element={<About />} />
-                <Route path="/ContactMe" exact element={<ContactMe />} />
+                <Route path="/Contact" exact element={<Contact />} />
             </Routes>
         </GlobalStyles>   
         </BrowserRouter>

@@ -52,4 +52,9 @@ export const Wrapper = styled.div`
         width: 350px;
     }
 }
+
+.portfolio-intro {
+    text-align: center;
+    margin: 0px 25%;
+}
 `
