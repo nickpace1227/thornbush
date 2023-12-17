@@ -5,6 +5,7 @@ import Header from "../Header";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
 import About from "../About";
+import Footer from "../Footer";
 import {GlobalStyles} from "../styles/globalStyles";
 import GlobalFonts from '../../assets/fonts/fonts.js';
 
@@ -20,7 +21,8 @@ export default function Thornbush() {
                         <Route path="/Portfolio" exact element={<Portfolio />} />
                         <Route path="/About" exact element={<About />} />
                         <Route path="/Contact" exact element={<Contact />} />
-                </Routes>
+                    </Routes>
+                <Footer />
             </GlobalStyles>  
         </BrowserRouter>
     )
