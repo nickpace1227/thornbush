@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+.main-div {
+    margin-bottom: 200px;
+}
 
 @media only screen and (min-width: 1500px) {
     .large-screen {
@@ -32,7 +35,7 @@ export const Wrapper = styled.div`
     
     .portfolio-photo {
         height: auto;
-        width: 115%;
+        width: 100%;
     }
 }
 

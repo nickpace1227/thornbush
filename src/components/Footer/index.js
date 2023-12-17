@@ -4,7 +4,7 @@ import {Wrapper} from "./styles.js";
 export default function Footer() {
     return(
         <Wrapper>
-            <div>stuff</div>
+            <div className="main-footer">stuff</div>
         </Wrapper>
     )
 }
