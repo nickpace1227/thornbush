@@ -12,24 +12,14 @@ export default function Header() {
                 <img className="header-logo" alt="logo" src={ThornbushLogoWhite}/>
             </Link>
             <div className="header-words">
-            <h1 className="company-name">
+            <div className="company-name">
                 Thornbush Photography
-            </h1>
-            <nav className="nav nav-bar">
-                <ul className="list">
-                    <li className="list-item">
+            </div>
+            <nav className="nav-bar list">
                         <Link to="/homepage" className="link-item">HomePage</Link>
-                    </li>
-                    <li className="list-item">
                         <Link to="/Portfolio" className="link-item">Portfolio</Link>
-                    </li>
-                    <li className="list-item">
-                        <Link className="link-item" to="/About">About</Link>
-                    </li>
-                    <li className="list-item">
+                        <Link to="/About" className="link-item">About</Link>
                         <Link to="/Contact" className="link-item">Contact</Link>
-                    </li>
-                </ul>
             </nav>
             </div>
         </div>

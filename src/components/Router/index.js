@@ -7,12 +7,10 @@ import Contact from "../Contact";
 import About from "../About";
 import Footer from "../Footer";
 import {GlobalStyles} from "../styles/globalStyles";
-import GlobalFonts from '../../assets/fonts/fonts.js';
 
 export default function Thornbush() {
     return (
         <BrowserRouter>
-        <GlobalFonts />
             <GlobalStyles>
                 <Header />
                     <Routes>
