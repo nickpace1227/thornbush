@@ -57,19 +57,19 @@ export default function Portfolio() {
         <div className="column">
             <div className="row"> display: flex flex-direction: row flex-wrap: wrap
             <div className='new-col-1'> display: flex flex-direction: column
-                <spans>pci 1</spans>
-                <spans>pci 2</spans>
-                <spans>pci 3</spans>
+                <spans>pic 1</spans>
+                <spans>pic 2</spans>
+                <spans>pic 3</spans>
             </div>
             <div className='new-col-1'>
-                <spans>pci 1</spans>
-                <spans>pci 2</spans>
-                <spans>pci 3</spans>
+                <spans>pic 1</spans>
+                <spans>pic 2</spans>
+                <spans>pic 3</spans>
             </div>
             <div className='new-col-1'>
-                <spans>pci 1</spans>
-                <spans>pci 2</spans>
-                <spans>pci 3</spans>
+                <spans>pic 1</spans>
+                <spans>pic 2</spans>
+                <spans>pic 3</spans>
             </div>
             </div>
            
@@ -81,7 +81,7 @@ export default function Portfolio() {
                 <img className="portfolio-photo" alt={photo.src} src={require(`../../assets/images/${photo.src}${photo.type}`)} onClick={toggleImageModal} />
                 </div>
             )
-        }) : <img className="portfolio-photo" src={require(`../../assets/images/Crab.jpg`)} onClick={toggleImageModal}/>}
+        }) : <img className="portfolio-photo" src={require(`../../assets/images/Crab.jpg`)} onClick={toggleImageModal} alt="Crab.jpg" />}
         </div>
         </Wrapper>
     )
