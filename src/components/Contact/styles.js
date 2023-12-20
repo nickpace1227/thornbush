@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+    height: auto;
 
 .contact-page {
     display: flex;
@@ -18,6 +19,7 @@ export const Wrapper = styled.div`
     margin: 10px;
     width: 250px;
     height: 30px;
+    background: rgb(255, 255, 255, .7);
 }
 
 .contact-message {

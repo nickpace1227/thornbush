@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     margin-bottom: 200px;
-    background-color: green;
+    height: auto;
 
 .column {
     display: grid;
@@ -25,9 +25,20 @@ export const Wrapper = styled.div`
     }
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.new-col-1 {
+    display: flex;
+    flex-direction: column;
+}
+
 .portfolio-photo {
     height: auto;
-    width: 100%;
+    width: 500px;
 }
 
 .portfolio-intro {

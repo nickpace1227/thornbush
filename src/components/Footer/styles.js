@@ -6,11 +6,33 @@ bottom: 0;
 width: 100%;
 
     .main-footer {
+        display: flex;
+        justify-content: center;
         position: relative;
         bottom: 0;
         width: 100%;
-        height: 50px;
+        height: 80px;
         margin-top: 50px;
-        background-color: blue;
+        background-color: wheat;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-words {
+        margin: 15px;
+    }
+
+    .instagram-logo {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        weight: 50px;
+    }
+
+    .instagram-logo:hover {
+        cursor: pointer;
     }
 `
