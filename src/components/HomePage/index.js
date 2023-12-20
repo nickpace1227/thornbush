@@ -54,9 +54,7 @@ export default function HomePage() {
     return (  
     <Wrapper>
             <h1>Welcome to Thornbush Photography</h1>
-            <div className="homepage-words">I'm an amateur photographer with a focus on wildlife and sometimes landscape. Take a look around and if you have any questions feel free to drop me a line.</div>
-            <h2>Have a look at some sample photos here.</h2>
-            <div>If you like what you see, head over to my <Link to="/portfolio" className="portfolio-link">portfolio</Link> page and see these and more.</div>
+            <div className="homepage-words">I'm an amateur photographer with a focus on wildlife and sometimes landscape. Take a look around and if you have any questions feel free to drop me a line. If you like what you see, head over to my <Link to="/portfolio" className="portfolio-link">portfolio</Link> page and see these and more.</div>
             <section>
                 <div className="carousel">
                     <button className="carousel-button prev" onClick={handlePrev}>&#10603;</button>

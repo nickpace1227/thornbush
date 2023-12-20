@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
 .homepage-words {
     text-align: center;
     width: 50%;
+    font-weight: bold;
 }
 
 .portfolio-link {
@@ -23,6 +24,7 @@ export const Wrapper = styled.div`
     height: 100%;
     position: relative;
     justify-content: center;
+    margin: 50px 0px 50px 0px;
 }
 
 .carousel-photo {
