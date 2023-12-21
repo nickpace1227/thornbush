@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+body.active-modal {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }

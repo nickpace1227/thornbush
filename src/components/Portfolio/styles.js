@@ -4,45 +4,77 @@ export const Wrapper = styled.div`
     margin-bottom: 200px;
     height: auto;
 
-.column {
-    display: grid;
-    column-gap: 5%;
-
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
-    @media only screen and (min-width: 1500px) {
-        grid-template-columns: 25% 25% 25%;  
-    }
-
-    @media only screen and (851px <= width <= 1499px) {
-        grid-template-columns: 25% 25%;
-    }
-
-    @media only screen and (max-width: 850px) {
-        grid-template-columns: 50%;
-    }
-}
-
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
 }
 
-.new-col-1 {
+.column {
     display: flex;
     flex-direction: column;
+    column-gap: 0px;
 }
 
-.portfolio-photo {
+.photo-wide {
     height: auto;
     width: 500px;
+    margin: 5px;
+}
+
+.photo-tall {
+    height: auto;
+    width: 500px;
+    margin: 5px;
 }
 
 .portfolio-intro {
     text-align: center;
     margin: 15px 15%;
+    font-weight: bold;
+}
+
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, .7);
+    z-index: 1000;
+}
+
+.close-button {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px;
+}
+
+.modal-photo-wide {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    padding: 0px;
+    z-index: 1000;
+    height: auto;
+    width: 60vw;
+    overflow: hidden;
+}
+
+.modal-photo-tall {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    padding: 0px;
+    z-index: 1000;
+    height: 90vh;
+    width: auto;
+    overflow: hidden;
 }
 `

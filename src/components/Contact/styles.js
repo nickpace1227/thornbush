@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
     width: 50%;
     text-align: center;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .input-field {

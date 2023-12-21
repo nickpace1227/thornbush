@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import CardStockBackground from "../../assets/images/CardStockBackground.jpg";
-import BadScriptRegular from "../../assets/fonts/badScript/BadScriptRegular.ttf";
-import QuicksandRegular from "../../assets/fonts/quicksand/QuicksandRegular.ttf";
-import LilyScriptOneRegular from "../../assets/fonts/lilyScript/LilyScriptOneRegular.ttf";
+import BadScriptRegular from "../../assets/fonts/BadScriptRegular.ttf";
+import QuicksandRegular from "../../assets/fonts/QuicksandRegular.ttf";
 
 export const GlobalStyles = styled.div `
 height: 100%;
@@ -24,13 +23,6 @@ background-image: url(${CardStockBackground});
     src:
     local("QuicksandRegular"),
     url(${QuicksandRegular}),
-}
-
-@font-face {
-    font-family: 'LilyScriptOneRegular';
-    src:
-    local('LilyScriptOneRegular'),
-    url(${LilyScriptOneRegular})
 }
 
 * {
