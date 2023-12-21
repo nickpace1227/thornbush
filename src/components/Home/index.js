@@ -30,23 +30,21 @@ const photos = [
   },
 ];
 
-export default function HomePage() {
+export default function Home() {
   const [imageIndex, setImageIndex] = useState(0);
 
-  // ToDo carousels should wrap around, add logic that when you hit the max index it loops to the first image
   const handleNext = () => {
     if (imageIndex === 4) {
-      return;
+      setImageIndex(0);
     }
     if (imageIndex < 4) {
       setImageIndex(imageIndex + 1);
     }
   };
 
-  // ToDo same here but when you hit 0 loop to the max index
   const handlePrev = () => {
     if (imageIndex <= 0) {
-      return;
+      setImageIndex(photos.length - 1);
     }
     if (imageIndex > 0) {
       setImageIndex(imageIndex - 1);
@@ -56,7 +54,6 @@ export default function HomePage() {
   return (
     <Wrapper>
       <h1>Welcome to Thornbush Photography</h1>
-      {/* ToDo I'd consider adding the same blur or bg-type effect that I did on your about page. this text is difficult to read */}
       <div className="homepage-words">
         I'm an amateur photographer with a focus on wildlife and sometimes
         landscape. Take a look around and if you have any questions feel free to
@@ -68,8 +65,6 @@ export default function HomePage() {
       </div>
       <section>
         <div className="carousel">
-          {/* // ToDo change the color of the buttons when they aren't being hovered to something with a bit more contrast 
-          OR slide the buttons OUTSIDE the image (ie to the left and right of the carousel) */}
           <button className="carousel-button prev" onClick={handlePrev}>
             &#10603;
           </button>
@@ -83,22 +78,6 @@ export default function HomePage() {
             alt={photos[imageIndex].src}
             data-active
           />
-          {/* // ToDo remove these comments */}
-          {/* <li className="slide" data-active>
-                            <img src={ScrubJay} alt="ScrubJay"  />
-                        </li>
-                        <li className="slide">
-                            <img src={FlockofBirds} alt="FlockofBirds"  />
-                        </li>
-                        <li className="slide">
-                            <img src={GatorEye} alt="GatorEye"  />
-                        </li>
-                        <li className="slide">
-                            <img src={Crab} alt="Crab" />
-                        </li>
-                        <li className="slide">
-                            <img src={SoftshellTurtle} alt="SoftshellTurtle" />
-                        </li> */}
         </div>
       </section>
     </Wrapper>

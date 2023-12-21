@@ -10,10 +10,9 @@ export const Wrapper = styled.div`
 
   .about-words {
     width: 50%;
-    /* ToDo I'd consider adding these */
-    /* max-width: 600px;
-    backdrop-filter: blur(1px);
+    max-width: 600px;
+    backdrop-filter: blur(2px);
     padding: 8px;
-    border-radius: 4px; */
+    border-radius: 4px; 
   }
 `;

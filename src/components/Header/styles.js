@@ -14,9 +14,8 @@ export const Wrapper = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    /* ToDo if you are going to do no-repeat above, you need to do something like this: */
-    /* width: 100%;
-    background-color: wheat; */
+    width: 100%;
+    background-color: wheat;
   }
 
   .header-logo {

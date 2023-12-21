@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "../HomePage";
+import Home from "../Home";
 import Header from "../Header";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
@@ -15,8 +15,7 @@ export default function Thornbush() {
         <Header />
         <Routes>
           {/* you have two routes that are the same component. delete /HomePage and update your links to just route to / */}
-          <Route path="/" exact element={<HomePage />} />
-          <Route path="/HomePage" exact element={<HomePage />} />
+          <Route path="/" exact element={<Home />} />
           <Route path="/Portfolio" exact element={<Portfolio />} />
           <Route path="/About" exact element={<About />} />
           <Route path="/Contact" exact element={<Contact />} />

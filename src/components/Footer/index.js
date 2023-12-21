@@ -1,6 +1,5 @@
 import React from "react";
 import { Wrapper } from "./styles.js";
-// ToDo delete this import you're not using it OR see comment below
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -10,18 +9,14 @@ export default function Footer() {
 
   return (
     <Wrapper>
-      <div className="main-footer">
-        <div className="footer-content">
-          {/*  ToDo need a alt tag here */}
-          <img
+          <Link to="https://www.instagram.com/thornbushphotography/" target="_blank" rel="noopener noreferrer" className="footer-content">
+            <img
+            alt="instagram-logo"
             src={require("../../assets/images/InstagramGlyphGradient.png")}
             className="instagram-logo"
-            onClick={handleClick}
-          />
-          {/* ToDo I'd turn this into a link */}
-          <div className="footer-words">Check us out on instagram!</div>
-        </div>
-      </div>
+            />
+            <div className="footer-words">Check us out on instagram!</div>
+          </Link>
     </Wrapper>
   );
 }

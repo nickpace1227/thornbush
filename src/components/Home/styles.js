@@ -7,11 +7,14 @@ export const Wrapper = styled.div`
   align-items: center;
   height: auto;
   background-image: url(${CardStockBackground});
+  backdrop-filter: blur (2px);
+  border-radius: 4px;
+
 
   .homepage-words {
     text-align: center;
     width: 50%;
-    /* ToDo need a max-width here */
+    max-width: 75%;
     font-weight: bold;
   }
 
@@ -31,6 +34,7 @@ export const Wrapper = styled.div`
   .carousel-photo {
     width: 700px;
     height: auto;
+    box-shadow: 10px 5px 5px black;
   }
 
   .carousel-button {
@@ -38,26 +42,23 @@ export const Wrapper = styled.div`
     z-index: 2;
     background: none;
     border: none;
-    /* ToDo I dont like the use of rem typically. MOST organizations prefer the use of pixels  */
-    /* this is because rem is based off the size of the root element, which can be changed dynamically. 
-    so this is a "unknown" value */
-    font-size: 4rem;
+    font-size: 50px;
     top: 50%;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .carousel-button:hover {
     color: white;
     cursor: pointer;
   }
-  /* ToDo same here */
+
   .carousel-button.prev {
-    left: 1rem;
+    left: 10px;
   }
-  /* ToDo same here */
+
   .carousel-button.next {
-    right: 1rem;
+    right: 10px;
   }
 `;
