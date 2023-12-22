@@ -3,6 +3,12 @@ import { Wrapper } from "./styles.js";
 
 const photos1 = [
   {
+    label: "IMG0003",
+    src: "Limpkin",
+    type: ".jpg",
+    size: "photo-tall",
+  },
+  {
     label: "IMG0001",
     src: "ScrubJay",
     type: ".jpg",
@@ -13,12 +19,6 @@ const photos1 = [
     src: "FlockofBirds",
     type: ".jpg",
     size: "photo-wide",
-  },
-  {
-    label: "IMG0003",
-    src: "Limpkin",
-    type: ".jpg",
-    size: "photo-tall",
   },
 ];
 

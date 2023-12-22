@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin-bottom: 200px;
-  height: auto;
   
   .active-modal {
-    max-height: 1440px;
+    height: auto;
+    max-height: 100%;
+    background-image: url(../../assets/images/Crab.jpg);
   }
 
   .row {
@@ -26,12 +27,14 @@ export const Wrapper = styled.div`
     height: auto;
     width: 500px;
     margin: 5px;
+    box-shadow: 10px 5px 5px black;
   }
 
   .photo-tall {
     height: auto;
     width: 500px;
     margin: 5px;
+    box-shadow: 10px 5px 5px black;
   }
 
   .portfolio-intro {

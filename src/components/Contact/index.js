@@ -21,6 +21,7 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
       if (name === "") {
         setValidName("invalid-input")
       };
