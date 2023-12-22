@@ -6,9 +6,9 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [validName, setValidName] = useState("valid-input");
-  const [validEmail, setValidEmail] = useState("valid-input");
-  const [validMessage, setValidMessage] = useState("valid-message");
+  const [validName, setValidName] = useState(true);
+  const [validEmail, setValidEmail] = useState(true);
+  const [validMessage, setValidMessage] = useState(true);
   const [validForm, setValidForm] = useState(false);
 
   const contactMessage = {
@@ -21,33 +21,39 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
+    const errorCheck = {
+      name: validName,
+      email: validEmail,
+      message: validMessage,
+      form: validForm
+    }
+    
+    if (name === "") {
+      setValidName(false);
+      errorCheck.name = false;
+    }
 
-      if (name === "") {
-        setValidName("invalid-input")
-      };
+    if (!emailRegex.test(email)) {
+      setValidEmail(false);
+      errorCheck.email = false;
+    } 
 
-      if (!email.match(emailRegex) || email === "") {
-        setValidEmail("invalid-input")
-      };
+    if (message === "") {
+      setValidMessage(false);
+      errorCheck.message = false;      
+    } 
 
-      if (message === "") {
-        setValidMessage("invalid-message")
-      };
+    if (!errorCheck.message || !errorCheck.email || !errorCheck.name) {
+      setValidForm(false);
+      return;
+    }
 
-      if (name !== "") {
-        setValidName("valid-input")
-      };
-
-      if (email.match(emailRegex)) {
-        setValidEmail("valid-input")
-      };
-
-      if (message !== "") {
-        setValidMessage("valid-message")
-      };
-
-      if (name !== "" && email !== "" && email.match(emailRegex) && message !== "") {
-
+    if (errorCheck.message && errorCheck.email && errorCheck.name) {
+      setValidForm(true);
+      errorCheck.form = true;
+       
+      if (errorCheck.form) {
       emailjs
         .send(
           "service_kbie0nm",
@@ -55,18 +61,13 @@ export default function Contact() {
           contactMessage,
           "A50rxTr5mug440osn"
         )
-        .then(
-          function (response) {
+        .then((response) => {
             console.log("SUCCESS!", response.status, response.text);
-          },
-          function (error) {
+          })
+          .catch((error) => {
             console.log("FAILED...", error);
-          }
-        );
-      setValidName("valid-input");
-      setValidEmail("valid-input");
-      setValidMessage("valid-message");
-      setValidForm(true);
+          });
+      }
     }
   }
 
@@ -80,25 +81,30 @@ export default function Contact() {
           back to you as soon as I can.
         </div> 
         <input
-          className={validName}
+          className={validName ? "valid-input" : "invalid-input"}
           type="text"
           placeholder="Name"
           name="from_name"
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => {
+            setName(e.target.value)
+            setValidName(true)}}
         />
         <input
-          className={validEmail}
+          className={validEmail ? "valid-input" : "invalid-input"}
           type="email"
           placeholder="Contact Email"
           name="reply_to"
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => {
+            setEmail(e.target.value)
+            setValidEmail(true)}}
         />
         <textarea
-          className={validMessage}
+          className={validMessage ? "valid-message" : "invalid-message"}
           placeholder="Your Question/Commission/Print Details/Love Letter"
           name="message"
-          onChange={(e) => setMessage(e.target.value)}
-        />
+          onChange={(e) => {
+            setMessage(e.target.value)
+            setValidMessage(true)}} />
         <button className="contact-button" type="button" onClick={sendEmail}>
           Submit
         </button>
