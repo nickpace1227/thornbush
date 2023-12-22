@@ -3,9 +3,6 @@ import { Wrapper } from "./styles.js";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
-  const handleClick = () => {
-    window.open("https://www.instagram.com/thornbushphotography/");
-  };
 
   return (
     <Wrapper>

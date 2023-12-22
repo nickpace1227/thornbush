@@ -183,6 +183,7 @@ export default function Portfolio() {
         <div className="image-modal" onClick={toggleModalState}>
           {/* ToDo this image needs an alt prop */}
           <img
+            alt={modalImage}
             src={modalImage}
             className={`modal-${modalClassName}`}
             onClick={toggleImageModal}
