@@ -71,7 +71,6 @@ export default function Home() {
           <button className="carousel-button next" onClick={handleNext}>
             &#10604;
           </button>
-          {/* // ToDo I think you need box-shadow on this image, or a border. the edges get lost with your BG */}
           <img
             className="carousel-photo"
             src={require(`../../assets/images/${photos[imageIndex].src}${photos[imageIndex].type}`)}

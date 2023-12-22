@@ -14,7 +14,6 @@ export default function Thornbush() {
       <GlobalStyles>
         <Header />
         <Routes>
-          {/* you have two routes that are the same component. delete /HomePage and update your links to just route to / */}
           <Route path="/" exact element={<Home />} />
           <Route path="/Portfolio" exact element={<Portfolio />} />
           <Route path="/About" exact element={<About />} />
