@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import { Wrapper } from "./styles.js";
+import ViewingModal from "../ViewingModal";
 
 const photos1 = [
   {
-    label: "IMG0003",
+    key: 1,
     src: "Limpkin",
     type: ".jpg",
     size: "photo-tall",
   },
   {
-    label: "IMG0001",
+    key: 2,
     src: "ScrubJay",
     type: ".jpg",
     size: "photo-wide",
   },
   {
-    label: "IMG0002",
+    key: 3,
     src: "FlockofBirds",
     type: ".jpg",
     size: "photo-wide",
@@ -24,19 +25,19 @@ const photos1 = [
 
 const photos2 = [
   {
-    label: "IMG0004",
+    key: 4,
     src: "PortraitScrub",
     type: ".jpg",
     size: "photo-tall",
   },
   {
-    label: "IMG0005",
+    key: 5,
     src: "SoftshellTurtle",
     type: ".jpg",
     size: "photo-wide",
   },
   {
-    label: "IMG0008",
+    key: 8,
     src: "Crab",
     type: ".jpg",
     size: "photo-wide",
@@ -45,19 +46,19 @@ const photos2 = [
 
 const photos3 = [
   {
-    label: "IMG0007",
+    key: 7,
     src: "SleepyBird",
     type: ".jpg",
     size: "photo-wide",
   },
   {
-    label: "IMG0006",
+    key: 6,
     src: "BeachBird",
     type: ".jpg",
     size: "photo-tall",
   },
   {
-    label: "IMG0009",
+    key: 9,
     src: "GatorEye",
     type: ".jpg",
     size: "photo-wide",
@@ -69,10 +70,14 @@ export default function Portfolio() {
   const [modalImage, setModalImage] = useState("");
   const [modalClassName, setModalClassName] = useState("");
 
-  const toggleImageModal = (src, className) => {
+  const openImageModal = (src, className) => {
     setModalImage(src);
     setModalClassName(className);
-    setModalState(!modalState);
+    setModalState(true);
+  };
+
+  const closeImageModal = () => {
+    setModalState(false);
   };
 
   // ToDo I like this. wont work for large Applications, but for something like this its a cool fix.
@@ -97,39 +102,34 @@ export default function Portfolio() {
         ID of the image you want, and we can get a print squared away for you.
         Otherwise have a look around.
       </div>
-       <div className="row">
-          {[photos1, photos2, photos3].map((photoArray) => {
-            return (
-              <div className="column">
-                {photoArray.map((photo) => {
-                  return (
-                    <img
-                      key={photo.label}
-                      className={photo.size}
-                      alt={photo.src}
-                      src={require(`../../assets/images/${photo.src}${photo.type}`)}
-                      onClick={(event) =>
-                        toggleImageModal(
-                          event.target.src,
-                          event.target.className
-                        )
-                      }
-                    />
-                  );
-                })}
-              </div>
-            );
-          })}
-        </div>
+      <div className="row">
+        {[photos1, photos2, photos3].map((photoArray) => {
+          return (
+            <div className="column">
+              {photoArray.map((photo) => {
+                return (
+                  <img
+                    key={photo.key}
+                    className={photo.size}
+                    alt={photo.src}
+                    src={require(`../../assets/images/${photo.src}${photo.type}`)}
+                    onClick={(event) =>
+                      openImageModal(event.target.src, event.target.className)
+                    }
+                  />
+                );
+              })}
+            </div>
+          );
+        })}
+      </div>
       {modalState && (
-        <div className="image-modal" onClick={toggleImageModal}>
-          <img
-            alt={modalImage}
-            src={modalImage}
-            className={`modal-${modalClassName}`}
-            onClick={toggleImageModal}
-          />
-        </div>
+        <ViewingModal
+          alt={modalImage}
+          src={modalImage}
+          modalClassName={modalClassName}
+          closeModal={() => closeImageModal()}
+        />
       )}
     </Wrapper>
   );

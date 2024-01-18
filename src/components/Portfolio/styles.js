@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin-bottom: 200px;
-  
+
   .active-modal {
-    height: auto;
-    max-height: 100%;
-    background-image: url(../../assets/images/Crab.jpg);
+    max-height: 50px;
   }
 
   .row {
@@ -47,7 +45,7 @@ export const Wrapper = styled.div`
     position: fixed;
     top: 0;
     height: 100vh;
-    width: 100vw; 
+    width: 100vw;
     background-color: rgb(0, 0, 0, 0.7);
     z-index: 1000;
   }
@@ -60,7 +58,6 @@ export const Wrapper = styled.div`
     padding: 0px;
     height: auto;
     width: 60vw;
-    overflow: hidden;
   }
 
   .modal-photo-tall {
@@ -71,6 +68,5 @@ export const Wrapper = styled.div`
     padding: 0px;
     height: 90vh;
     width: auto;
-    overflow: hidden;
   }
 `;
