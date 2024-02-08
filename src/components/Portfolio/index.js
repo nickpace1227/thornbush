@@ -80,21 +80,7 @@ export default function Portfolio() {
     setModalState(false);
   };
 
-  // ToDo I like this. wont work for large Applications, but for something like this its a cool fix.
-  // If I were doing this on a larger scale, I would do something below on Wrapper (see follow up comment)
-  // if (modalState) {
-  //   document.body.classList.add("active-modal");
-  // }
-
-  // if (!modalState) {
-  //   document.body.classList.remove("active-modal");
-  // }
-
   return (
-    // ToDo this is how you can do "conditional styling" based off the state of the wrapper. and then you just
-    // set the max-height of the wrapper to be the height of the screen. This will make it so that the body
-    // doesnt scroll when the modal is open.
-    // <Wrapper className={modalState ? "active-modal" : ""}>
     <Wrapper className={modalState ? "active-modal" : ""}>
       <div className="portfolio-intro">
         Thanks for checking out my portfolio. If you see something you like feel
