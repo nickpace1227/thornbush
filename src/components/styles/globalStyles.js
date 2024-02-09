@@ -7,7 +7,7 @@ export const GlobalStyles = styled.div`
   height: 100%;
   position: relative;
   padding-top: 144px;
-  padding-bottom: 80px;
+  padding-bottom: 48px;
   min-height: 100vh;
   background-image: url(${CardStockBackground});
 
