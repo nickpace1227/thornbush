@@ -41,7 +41,7 @@ export const Wrapper = styled.div`
 
   .nav-bar {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
     padding-left: 0px;
   }
 

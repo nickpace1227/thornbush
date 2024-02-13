@@ -13,8 +13,7 @@ export const Wrapper = styled.div`
 
   .homepage-words {
     text-align: center;
-    width: 50%;
-    max-width: 75%;
+    width: 800px;
     font-weight: bold;
   }
 
@@ -45,8 +44,8 @@ export const Wrapper = styled.div`
     font-size: 50px;
     top: 50%;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 1);
+    height: 40px;
   }
 
   .carousel-button:hover {
@@ -55,10 +54,23 @@ export const Wrapper = styled.div`
   }
 
   .carousel-button.prev {
-    left: 10px;
+    left: -66px;
   }
 
   .carousel-button.next {
-    right: 10px;
+    right: -66px;
   }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    width: 800px;
+    backdrop-filter: blur(2px);
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    }
 `;

@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
     max-height: 50px;
   }
 
+  .portfolio {
+    margin-top: 48px;
+  }
+
   .row {
     display: flex;
     flex-direction: row;
@@ -24,15 +28,30 @@ export const Wrapper = styled.div`
   .photo-wide {
     height: auto;
     width: 500px;
-    margin: 5px;
+    margin: 8px;
     box-shadow: 10px 5px 5px black;
   }
 
   .photo-tall {
     height: auto;
     width: 500px;
-    margin: 5px;
+    margin: 8px;
     box-shadow: 10px 5px 5px black;
+  }
+
+  .photo-id {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z: 100;
+    bottom: 56px;
+    left: 32px;
+    width: 32px;
+    height: 32px;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 4px;
   }
 
   .portfolio-intro {

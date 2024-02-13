@@ -19,9 +19,6 @@ export default function Header() {
             <Link to="/Portfolio" className="link-item">
               Portfolio
             </Link>
-            <Link to="/About" className="link-item">
-              About
-            </Link>
             <Link to="/Contact" className="link-item">
               Contact
             </Link>

@@ -99,7 +99,7 @@ export default function Contact() {
             setValidEmail(true)}}
         />
         <textarea
-          className={validMessage ? "valid-message" : "invalid-message"}
+          className={validMessage ? "valid-message message" : "invalid-message message"}
           placeholder="Your Question/Commission/Print Details/Love Letter"
           name="message"
           onChange={(e) => {

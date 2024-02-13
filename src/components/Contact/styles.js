@@ -20,8 +20,8 @@ export const Wrapper = styled.div`
   .valid-input {
     margin: 10px;
     width: 250px;
-    height: 30px;
-    padding: 4px 12px 4px 12px;
+    height: 40px;
+    padding: 8px 16px 8px 16px;
     background: rgb(255, 255, 255, 0.7);
     border: solid 2px grey;
   }
@@ -30,14 +30,14 @@ export const Wrapper = styled.div`
     margin: 10px;
     width: 250px;
     height: 30px;
-    padding: 4px 12px 4px 12px;
+    padding: 8px 16px 8px 16px;
     background: rgb(255, 255, 255, 0.7);
     border: solid 2px red;
   }
 
   .valid-message {
     margin: 10px;
-    width: 250px;
+    width: 500px;
     height: 150px;
     padding: 4px 12px 4px 12px;
     background: rgb(255, 255, 255, 0.7);
@@ -46,7 +46,7 @@ export const Wrapper = styled.div`
 
   .invalid-message {
     margin: 10px;
-    width: 250px;
+    width: 500px;
     height: 150px;
     padding: 4px 12px 4px 12px;
     background: rgb(255, 255, 255, 0.7);
