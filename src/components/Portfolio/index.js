@@ -37,7 +37,7 @@ const photos2 = [
     size: "photo-wide",
   },
   {
-    key: 8,
+    key: 6,
     src: "Crab",
     type: ".jpg",
     size: "photo-wide",
@@ -52,7 +52,7 @@ const photos3 = [
     size: "photo-wide",
   },
   {
-    key: 6,
+    key: 8,
     src: "GatorEye",
     type: ".jpg",
     size: "photo-tall",
@@ -83,44 +83,47 @@ export default function Portfolio() {
   return (
     <Wrapper className={modalState ? "active-modal" : ""}>
       <div className="portfolio">
-      <div className="row">
-        {[photos1, photos2, photos3].map((photoArray) => {
-          return (
-            <div className="column">
-              {photoArray.map((photo) => {
-                return (
-                  <div>
-                  <img
-                    key={photo.key}
-                    className={photo.size}
-                    alt={photo.src}
-                    src={require(`../../assets/images/${photo.src}${photo.type}`)}
-                    onClick={(event) =>
-                      openImageModal(event.target.src, event.target.className)
-                    }
-                  />
-                <div className="photo-id">{photo.key}</div>
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
-      </div>
-      {modalState && (
-        <ViewingModal
-          alt={modalImage}
-          src={modalImage}
-          modalClassName={modalClassName}
-          closeModal={() => closeImageModal()}
-        />
-      )}
-      <div className="portfolio-intro">
-        Thanks for checking out my portfolio. If you see something you like feel
-        free to head over to the contact page, send me a message with the image
-        ID of the image you want, and we can get a print squared away for you.
-        Otherwise have a look around.
-      </div>
+        <div className="row">
+          {[photos1, photos2, photos3].map((photoArray) => {
+            return (
+              <div className="column">
+                {photoArray.map((photo) => {
+                  return (
+                    <div>
+                      <img
+                        key={photo.key}
+                        className={photo.size}
+                        alt={photo.src}
+                        src={require(`../../assets/images/${photo.src}${photo.type}`)}
+                        onClick={(event) =>
+                          openImageModal(
+                            event.target.src,
+                            event.target.className
+                          )
+                        }
+                      />
+                      <div className="photo-id">{photo.key}</div>
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })}
+        </div>
+        {modalState && (
+          <ViewingModal
+            alt={modalImage}
+            src={modalImage}
+            modalClassName={modalClassName}
+            closeModal={() => closeImageModal()}
+          />
+        )}
+        <div className="portfolio-intro">
+          Thanks for checking out my portfolio. If you see something you like
+          feel free to head over to the contact page, send me a message with the
+          image ID of the image you want, and we can get a print squared away
+          for you. Otherwise have a look around.
+        </div>
       </div>
     </Wrapper>
   );
