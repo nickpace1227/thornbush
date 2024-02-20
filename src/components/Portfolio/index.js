@@ -86,7 +86,7 @@ export default function Portfolio() {
         <div className="row">
           {[photos1, photos2, photos3].map((photoArray) => {
             return (
-              <div className="column">
+              <div>
                 {photoArray.map((photo) => {
                   return (
                     <div>

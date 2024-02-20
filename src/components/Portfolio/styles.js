@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
   .column {
     display: flex;
     flex-direction: column;
-    column-gap: 0px;
+    height: fit-content;
   }
 
   .photo-wide {
@@ -50,7 +50,7 @@ export const Wrapper = styled.div`
     width: 32px;
     height: 32px;
     color: white;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 4px;
   }
 
