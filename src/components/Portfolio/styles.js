@@ -29,6 +29,7 @@ export const Wrapper = styled.div`
     height: auto;
     width: 500px;
     margin: 8px;
+    margin-bottom: -24px;
     box-shadow: 10px 5px 5px black;
   }
 
@@ -36,6 +37,7 @@ export const Wrapper = styled.div`
     height: auto;
     width: 500px;
     margin: 8px;
+    margin-bottom: -24px;
     box-shadow: 10px 5px 5px black;
   }
 
